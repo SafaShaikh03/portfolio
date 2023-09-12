@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Responsive Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">Safa</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section">
+      <div id="header">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">HELLO</p>
+          <h1 class="title">
+            I'm <span>Safa Shaikh<br />a</span> Web Developer
+          </h1>
+          <p class="description">
+            Welcome to my web developer portfolio! I'm Safa Shaikh, a skilled and
+            creative web developer with a passion for creating beautiful,
+            responsive, and user-friendly websites. I've worked on a variety of
+            web projects, ranging from personal blogs to e-commerce platforms. 
+          </p>
+          <div class="action__btns">
+            <button class="hire__me" > <a href="Safa_CV.pdf">Download CV</button></a>
+          </div>
+        </div>
+        <div class="image">
+          <img src="assets/profile.jpg" alt="profile" />
+        </div>
+      </div>
+      </div>
+      <div id="about">
+        <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+                <img src="about.jpg">
+            </div>
+            <div class="about-col-2">
+                  <h1 class="sub-title"> About Me</h1>
+                  <p>
+                    Self-motivated web developer intern looking for a full-stack web developer. 
+                    Passionate about building user-friendly dynamic web sites.
+                     Created an e-commerce website for a local retailer while pursuing Computer Engineering at SG Balekundri Institute of Technology. 
+                     My core skills include Database Management, Python Programming, Website designing, Basic Coding, and more. 
+                  </p>
+                 <div class="tab-titles">
+                     <p class="tab-links active-link" onclick="opentab('skills')"><b>Skills</b></p>
+                     <p class="tab-links" onclick="opentab('experience')"><b>Experience</b></p>
+                     <p class="tab-links" onclick="opentab('education')"><b>Education</b></p>
+            </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><i>Web Developement, Designing Web,
+                  Front-End Developement</li>
+              
+            </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><b>Junior Web Designer Intern in SolerECRM(2019)</b><br> Worked using HTML, CSS, JavaScript, PHP, SQL, Back-end basics, and
+                    Responsive Web Design skills</li>
+            <li><b>Intern as Data Scientist in Cubiccode Digital Media LLP(2022)</b><br>
+                Implemented Data mining and Machine learning algorithms.
+                Data Analysis using Python, NumPy, Pandas </li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><b>Bachelor Of Engineering,</b> S.G.Balekundri Institute of Technology Belgaum 
+                    (2020-2023)</li>
+            <li><b>Diploma in Computer Science</b>, Jain Polytechnic Belgaum (2017-2020)</li>
+           <li><b>SSLC</b> Bharatesh High School Belgaum (2017-2020)</li>
+                
+             </ul>
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
+    
+    <div id="portfolio">
+      <div class="container">
+          <h1 class="sub-title">My Project Work</h1>
+          <div class="work-list">
+              <div class="work">
+                  <img src="bakerywebsite.jpg">
+                  <div class="layer">
+                      <h3>Online Bakery Shop</h3>
+                  </div>
+              </div>
+              <div class="work">
+                <img src="home-service.png">
+                <div class="layer">
+                    <h3>Home Service Provider Application</h3>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="safety.png">
+                  <div class="layer">
+                      <h3>Women Safety Application</h3>
+  
+                  </div>
+              </div>
+      
+          </div>
+  
+      </div>
+  </div>
+  </section>
+
+    <div id="contact">
+        <div class="container">
+           <div class="row">
+              <div class="contact-left">
+                <h2 class="sub-title">Get in touch</h2>
+                <p>safashaikh312@gmail.com</p>
+                <p>+91-7204821967 </p>
+                
+            </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <div>
+                        <button type="submit" class="btn btn2">Submit</button></div>
+                    </form>
+                    <b><a id="msg">have a good day!</b>
+                </div>
+    
+                
+            </div>
+        </div>
+    
+    
+    </div>
+    
+    
+    </div>
+    
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");     
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closenmenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby7wJJzObaeZwISa_zfq2I8qkS3VzZtSFW5a0osnIYOgvCQbRqrbeiPM6BM3Tl9j2rdOQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+           .then(response =>{
+                msg.innerHTML = "Message Sent Succesfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+    </body>
+    </html>
+    </section>
+  </body>
+</html>
